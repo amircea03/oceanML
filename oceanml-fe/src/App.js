@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         setData(data.message);
       })
       .catch(error => console.error('Error fetching data:', error));
-  }, []); 
+  }, []);
 
   return (
     <div className="App">
