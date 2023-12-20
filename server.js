@@ -5,27 +5,19 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use('/static', express.static(path.join(__dirname, 'static')));
+app.use(express.static(path.join(__dirname, 'oceanml-frontend/build')));
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-app.get('/static/css/main.css', (req, res, next) => {
-  res.header('Content-Type', 'text/css');
-  next();
+app.get('/api/data', (req, res) => {
+  const responseData = { message: 'Hello from Express.js!' };
+  
+  res.json(responseData);
 });
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/views/index.html'));
-});
-
-app.post('/submit-form', (req, res) => {
-  const inputData = req.body.data;
-
-  /*
-   * Add API integrations here later.
-   * For now, all this is doing is echoing data transfer in the form.
-   */
-  res.send(`Received data: ${inputData}`);
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'oceanml-frontend/build', 'index.html'));
 });
 
 app.listen(port, () => {
