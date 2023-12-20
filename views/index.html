@@ -15,9 +15,42 @@
 
     <div class="container">
         <div class="form-container">
-            <!-- Your form and other content go here -->
+            <form id="oceanml-form">
+                <label for="data-input">Enter Data:</label>
+                <input type="text" id="data-input" name="data" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="result-container"></div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('oceanml-form');
+            const resultContainer = document.getElementById('result-container');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                const formData = new FormData(form);
+                const dataInput = formData.get('data');
+
+                fetch('/submit-form', {
+                    method: 'POST',
+                    body: new URLSearchParams(formData),
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                })
+                    .then(response => response.text())
+                    .then(data => {
+                        resultContainer.innerHTML = `<p>${data}</p>`;
+                    })
+                    .catch(error => {
+                        console.error('Error submitting form:', error);
+                    });
+            });
+        });
+    </script>
 </body>
 
 </html>
