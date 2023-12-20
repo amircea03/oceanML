@@ -1,13 +1,11 @@
 *.pyc
 __pycache__/
-*.egg-info*
 dist/
 env/
 venv/
 venv3/
 .venv/
 .pytest_cache
-
 *~
 *.lock
 *.swp
@@ -15,5 +13,4 @@ venv3/
 .ropeproject/
 .vscode/
 .idea
-
 *.DS_Store
