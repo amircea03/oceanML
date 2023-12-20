@@ -4,53 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/style.css">
-    <title>OceanML App</title>
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <title>OceanML Home</title>
 </head>
 
 <body>
-    <div class="header">
-        <h1>OceanML App</h1>
-    </div>
+    <header>
+        <h1>OceanML</h1>
+    </header>
 
-    <div class="container">
-        <div class="form-container">
-            <form id="oceanml-form">
-                <label for="data-input">Enter Data:</label>
-                <input type="text" id="data-input" name="data" required>
-                <button type="submit">Submit</button>
-            </form>
-            <div id="result-container"></div>
+    <div class="container index-content">
+        <div class="box">
+            <img src="path/to/image1.jpg" alt="Image 1">
+            <!-- Box Content Here -->
         </div>
+        <div class="box">
+            <img src="path/to/image2.jpg" alt="Image 2">
+            <!-- Box Content Here -->
+        </div>
+        <div class="box">
+            <img src="path/to/image3.jpg" alt="Image 3">
+            <!-- Box Content Here -->
+        </div>
+        <!-- Repeat the structure for the remaining boxes -->
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const form = document.getElementById('oceanml-form');
-            const resultContainer = document.getElementById('result-container');
-
-            form.addEventListener('submit', function (event) {
-                event.preventDefault();
-                const formData = new FormData(form);
-                const dataInput = formData.get('data');
-
-                fetch('/submit-form', {
-                    method: 'POST',
-                    body: new URLSearchParams(formData),
-                    headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded',
-                    },
-                })
-                    .then(response => response.text())
-                    .then(data => {
-                        resultContainer.innerHTML = `<p>${data}</p>`;
-                    })
-                    .catch(error => {
-                        console.error('Error submitting form:', error);
-                    });
-            });
-        });
-    </script>
 </body>
 
 </html>
