@@ -28,12 +28,5 @@ header {
   padding: 20px;
   text-align: center;
 }
-.box img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
 
 /*# sourceMappingURL=main.css.map */
