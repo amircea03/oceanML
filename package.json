@@ -2,9 +2,10 @@
   "name": "oceanml",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "sass": "node-sass styles/main.scss public/styles/main.css"  
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,6 @@
   },
   "homepage": "https://github.com/amircea03/oceanML#readme",
   "dependencies": {
-    "ejs": "^3.1.9"
+    "express": "^4.18.2"
   }
 }

@@ -1,66 +1,17 @@
-*.pyc
+# Node.js
+node_modules/
+
+# Python
 __pycache__/
-*.egg-info*
-dist/
-env/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
 venv/
-venv3/
-.venv/
-.pytest_cache
-/node_modules/
+env/
+*.pyc
 
-*~
-*.lock
-*.swp
-.vscode
-.ropeproject/
-.vscode/
-.idea
-
-*.DS_Store
-
-# Logs
-logs
-*.log
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Environment
-.env
-
-# OS generated files
+# OS-specific files
 .DS_Store
 Thumbs.db
-
-# Editor files
-.vscode/
-*.sublime-project
-*.sublime-workspace
-*.komodoproject
-.komodotools/
-.idea/
-*.swp
-*.swo
-
-# User-specific files
-*.rspec
-.history
-
-# Build files
-dist/
-build/
-
-# Dependency directories
-/jspm_packages/
-/bower_components/
-
-# Typescript
-tsconfig.json
-*.tsbuildinfo
-
-# Optional npm cache directory
-.npm
