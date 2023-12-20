@@ -1,5 +1,21 @@
-*.pyc
+# Node.js
+node_modules/
+
+# Python
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+*.pyc
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+=======
 dist/
 env/
 venv/
