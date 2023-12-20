@@ -1,27 +1,45 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
+import React from 'react';
 
-function App() {
-  const [data, setData] = useState('');
-
-  useEffect(() => {
-    fetch('/api/data')
-      .then(response => response.json())
-      .then(data => {
-        console.log('Data from Express.js:', data);
-        setData(data.message);
-      })
-      .catch(error => console.error('Error fetching data:', error));
-  }, []);
-
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>OceanML React App</h1>
-        <p>Data from Express.js: {data}</p>
+    <div>
+      <header>
+        <h1>OceanML</h1>
       </header>
+      <div className="container index-content">
+        <div className="box">
+          {/* Box Content Here */}
+          Box 1
+          <div className="box-image-placeholder"></div>
+        </div>
+        <div className="box">
+          {/* Box Content Here */}
+          Box 2
+          <div className="box-image-placeholder"></div>
+        </div>
+        <div className="box">
+          {/* Box Content Here */}
+          Box 3
+          <div className="box-image-placeholder"></div>
+        </div>
+        <div className="box">
+          {/* Box Content Here */}
+          Box 4
+          <div className="box-image-placeholder"></div>
+        </div>
+        <div className="box">
+          {/* Box Content Here */}
+          Box 5
+          <div className="box-image-placeholder"></div>
+        </div>
+        <div className="box">
+          {/* Box Content Here */}
+          Box 6
+          <div className="box-image-placeholder"></div>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
