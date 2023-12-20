@@ -1,4 +1,3 @@
-// App.jsx
 import React from 'react';
 
 const App = () => {
@@ -10,7 +9,7 @@ const App = () => {
       <div className="container index-content">
         {[1, 2, 3, 4, 5, 6].map((boxNumber) => (
           <div className="box" key={`box${boxNumber}`}>
-            {/* Box Content Here */}
+            {/* Box Content */}
             Box {boxNumber}
             <div className="box-image-placeholder"></div>
           </div>
