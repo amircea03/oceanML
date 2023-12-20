@@ -15,3 +15,18 @@ env/
 # OS-specific files
 .DS_Store
 Thumbs.db
+=======
+dist/
+env/
+venv/
+venv3/
+.venv/
+.pytest_cache
+*~
+*.lock
+*.swp
+.vscode
+.ropeproject/
+.vscode/
+.idea
+*.DS_Store
