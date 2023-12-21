@@ -11,7 +11,9 @@ const Dashboard: React.FC = () => {
       <Link to="/about" className="box box1">
         About OceanML
       </Link>
-      <div className="box box2">Box 2</div>
+      <Link to="/machinelearning" className="box box1">
+          Machine Learning
+        </Link>
       <div className="box box3">Box 3</div>
       <div className="box box4">Box 4</div>
       <div className="box box5">Box 5</div>

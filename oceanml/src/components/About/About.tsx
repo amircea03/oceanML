@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../Dashboard/Dashboard.scss';
+import './About.scss';
 
 const About: React.FC = () => {
   return (
