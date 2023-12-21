@@ -1,0 +1,66 @@
+// src/components/Dashboard/Dashboard.scss
+
+$main-color: #3498db;
+$dark-color: #2c3e50;
+$lighter-blue: #5dade2; // Adjust this color to be lighter than $main-color
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+
+    .top-bar {
+        background-color: $lighter-blue;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+
+        h2 {
+            color: white;
+        }
+    }
+
+    .box {
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+
+        &:hover {
+            background-color: $main-color;
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        &.box1 {
+            background-color: $main-color;
+        }
+
+        &.box2 {
+            background-color: darken($main-color, 10%);
+        }
+
+        &.box3 {
+            background-color: darken($main-color, 20%);
+        }
+
+        &.box4 {
+            background-color: darken($main-color, 30%);
+        }
+
+        &.box5 {
+            background-color: darken($main-color, 40%);
+        }
+
+        &.box6 {
+            background-color: darken($main-color, 50%);
+        }
+    }
+}
