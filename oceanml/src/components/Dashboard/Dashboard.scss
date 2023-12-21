@@ -1,8 +1,6 @@
-// src/components/Dashboard/Dashboard.scss
-
 $main-color: #3498db;
 $dark-color: #2c3e50;
-$lighter-blue: #5dade2; // Adjust this color to be lighter than $main-color
+$lighter-blue: #5dade2;
 
 .dashboard-container {
     display: flex;
@@ -62,5 +60,17 @@ $lighter-blue: #5dade2; // Adjust this color to be lighter than $main-color
         &.box6 {
             background-color: darken($main-color, 50%);
         }
+    }
+}
+
+.footer {
+    background-color: $lighter-blue;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+
+    p {
+        color: white;
+        margin: 0;
     }
 }
