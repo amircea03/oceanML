@@ -17,6 +17,25 @@ header {
   text-align: center;
 }
 
+.footer-container {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
 .index-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -57,6 +76,25 @@ header {
 header {
   background-color: #002b4d;
   /* Dark blue color for the header */
+}
+
+.footer-container {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */

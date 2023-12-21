@@ -1,4 +1,6 @@
 import React from 'react';
+import Footer from './Footer';
+import './styles/css/main.css'; // Import this line to ensure the styles are applied
 
 const App = () => {
   return (
@@ -15,6 +17,7 @@ const App = () => {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   );
 };
