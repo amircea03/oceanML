@@ -36,30 +36,6 @@ $lighter-blue: #5dade2;
             transform: scale(1.1);
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         }
-
-        &.box1 {
-            background-color: $main-color;
-        }
-
-        &.box2 {
-            background-color: darken($main-color, 10%);
-        }
-
-        &.box3 {
-            background-color: darken($main-color, 15%);
-        }
-
-        &.box4 {
-            background-color: darken($main-color, 20%);
-        }
-
-        &.box5 {
-            background-color: darken($main-color, 25%);
-        }
-
-        &.box6 {
-            background-color: darken($main-color, 30%);
-        }
     }
 }
 
@@ -73,4 +49,14 @@ $lighter-blue: #5dade2;
         color: white;
         margin: 0;
     }
+}
+
+.text-container {
+    width: 85%;
+    height: 200px;
+    margin: 20px;
+    display: static;
+    $dark-color: #2c3e50;
+    align-items: center;
+    text-align: center;
 }
