@@ -46,19 +46,19 @@ $lighter-blue: #5dade2;
         }
 
         &.box3 {
-            background-color: darken($main-color, 20%);
+            background-color: darken($main-color, 15%);
         }
 
         &.box4 {
-            background-color: darken($main-color, 30%);
+            background-color: darken($main-color, 20%);
         }
 
         &.box5 {
-            background-color: darken($main-color, 40%);
+            background-color: darken($main-color, 25%);
         }
 
         &.box6 {
-            background-color: darken($main-color, 50%);
+            background-color: darken($main-color, 30%);
         }
     }
 }
