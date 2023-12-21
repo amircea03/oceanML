@@ -1,0 +1,44 @@
+$main-color: #3498db;
+$dark-color: #2c3e50;
+$lighter-blue: #5dade2;
+
+.wh-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    
+    .top-bar {
+        background-color: $lighter-blue;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+
+        h2 {
+            color: white;
+        }
+    }
+}
+
+.footer {
+    background-color: $lighter-blue;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+
+    p {
+        color: white;
+        margin: 0;
+    }
+}
+
+.text-container {
+    width: 85%;
+    height: 200px;
+    margin: 20px;
+    display: static;
+    $dark-color: #2c3e50;
+    align-items: center;
+    text-align: center;
+}

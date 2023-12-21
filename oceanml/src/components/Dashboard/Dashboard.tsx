@@ -12,9 +12,11 @@ const Dashboard: React.FC = () => {
         About OceanML
       </Link>
       <Link to="/machinelearning" className="box box1">
-          Machine Learning
-        </Link>
-      <div className="box box3">Box 3</div>
+        Machine Learning
+      </Link>
+      <Link to="/waveheight" className="box box1">
+        Wave Height
+      </Link>
       <div className="box box4">Box 4</div>
       <div className="box box5">Box 5</div>
       <div className="box box6">Box 6</div>
