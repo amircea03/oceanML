@@ -11,7 +11,7 @@ const MachineLearning: React.FC = () => {
       <Link to="/" className="box box1">
         Dashboard
       </Link>
-      <div className="text-container">
+      <div className="ml-text-container">
         <h1>OceanML "Machine Learning"</h1>
         <p>OceanML's Machine Learning Platform</p>
       </div>
