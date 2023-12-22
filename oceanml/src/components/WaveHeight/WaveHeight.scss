@@ -38,7 +38,11 @@ $lighter-blue: #5dade2;
     height: 200px;
     margin: 20px;
     display: static;
-    $dark-color: #2c3e50;
+    background-color: $dark-color;
     align-items: center;
     text-align: center;
+    
+    h2 {
+        color: white;
+    }
 }
